@@ -1,0 +1,9 @@
+:root {
+  --redpie: red;
+}
+
+div {
+  background: var(--redpie);
+  color: var(--other-color, green);
+  top: divide(subtract(30, floor(multiply(20, 10))), 2);
+}
