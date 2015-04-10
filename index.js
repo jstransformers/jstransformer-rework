@@ -10,6 +10,7 @@
 var rework = require('rework');
 
 exports.name = 'rework';
+exports.inputFormats = ['css', 'rework'];
 exports.outputFormat = 'css';
 
 exports.render = function _render(str, opts, plugins) {
