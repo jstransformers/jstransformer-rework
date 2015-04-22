@@ -23,7 +23,7 @@ test('should transform modern CSS with ReworkCSS (.render)', function(done) {
   ];
   var fixture = fs.readFileSync('./test/fixture.css', 'utf8');
   var expected = fs.readFileSync('./test/expected.css', 'utf8');
-  var actual = transform.render(fixture, {}, plugins);
+  var actual = transform.render(fixture, {plugins: plugins});
 
   test.equal(actual, expected);
   done();
