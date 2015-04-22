@@ -1,5 +1,9 @@
 
 
+## v0.2.0 / April 22, 2015
+- update tests for last commit
+- add support for `options.plugins`
+
 ## v0.1.1 / April 11, 2015
 - add `inputFormats`
 

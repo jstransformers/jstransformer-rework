@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-rework",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "ReworkCSS support for JS Transformers. CSS to CSS transformation.",
   "scripts": {
     "test": "node test",
