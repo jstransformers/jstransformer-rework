@@ -1,4 +1,8 @@
+# Changelog
 
+## v0.3.0: 2016-12-03
+
+- Updated Boilerplate
 
 ## v0.2.0 / April 22, 2015
 - update tests for last commit
@@ -11,4 +15,5 @@
 - stable, npm publish
 
 ## v0.0.0 / April 10, 2015
-- first commits
+
+- Initial release

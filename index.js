@@ -1,16 +1,9 @@
-/**
- * jstransformer-rework <https://github.com/tunnckoCore/jstransformer-rework>
- *
- * Copyright (c) 2015 Charlike Mike Reagent, contributors.
- * Released under the MIT license.
- */
-
 'use strict';
 
 var rework = require('rework');
 
 exports.name = 'rework';
-exports.inputFormats = ['css', 'rework'];
+exports.inputFormats = ['rework', 'reworkcss'];
 exports.outputFormat = 'css';
 
 exports.render = function _render(str, options) {
