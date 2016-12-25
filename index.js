@@ -1,23 +1,23 @@
-'use strict';
+'use strict'
 
-var rework = require('rework');
+var rework = require('rework')
 
-exports.name = 'rework';
-exports.inputFormats = ['rework', 'reworkcss'];
-exports.outputFormat = 'css';
+exports.name = 'rework'
+exports.inputFormats = ['rework', 'reworkcss']
+exports.outputFormat = 'css'
 
-exports.render = function _render(str, options) {
-  options = typeof options === 'object' ? options : {};
-  options.plugins = arrayify(options.plugins);
+exports.render = function (str, options) {
+  options = typeof options === 'object' ? options : {}
+  options.plugins = arrayify(options.plugins)
 
-  var process = rework(str, options);
+  var process = rework(str, options)
 
-  options.plugins.forEach(function(plugin) {
-    process = process.use(plugin);
-  });
+  options.plugins.forEach(function (plugin) {
+    process = process.use(plugin)
+  })
 
-  return process.toString(options);
-};
+  return process.toString(options)
+}
 
 /**
  * arrayify value
@@ -27,7 +27,7 @@ exports.render = function _render(str, options) {
  * @api private
  */
 function arrayify(val) {
-  return !Array.isArray(val)
-    ? [val]
-    : val;
+  return Array.isArray(val) ?
+    val :
+    [val]
 }
