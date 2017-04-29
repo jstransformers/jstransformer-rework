@@ -1,5 +1,7 @@
 # jstransformer-rework
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-rework.svg)](https://greenkeeper.io/)
+
 [ReworkCSS](https://github.com/reworkcss/css) support for [JSTransformers](http://github.com/jstransformers).
 
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-rework/master.svg)](https://travis-ci.org/jstransformers/jstransformer-rework)
