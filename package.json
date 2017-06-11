@@ -3,10 +3,11 @@
     "rework": "~1.0.1"
   },
   "name": "jstransformer-rework",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "rework support for JSTransformers.",
   "keywords": [
-    "jstransformer"
+    "jstransformer",
+    "rework"
   ],
   "files": [
     "index.js"
@@ -15,7 +16,7 @@
     "rework-plugin-function": "^1.0.2",
     "rework-vars": "^3.1.1",
     "test-jstransformer": "^1.0.0",
-    "xo": "^0.17.1"
+    "xo": "*"
   },
   "scripts": {
     "coverage": "test-jstransformer coverage",

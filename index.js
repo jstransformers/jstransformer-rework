@@ -1,6 +1,6 @@
 'use strict'
 
-var rework = require('rework')
+const rework = require('rework')
 
 exports.name = 'rework'
 exports.inputFormats = ['rework', 'reworkcss']
@@ -10,17 +10,17 @@ exports.render = function (str, options) {
   options = typeof options === 'object' ? options : {}
   options.plugins = arrayify(options.plugins)
 
-  var process = rework(str, options)
+  const processor = rework(str, options)
 
-  options.plugins.forEach(function (plugin) {
-    process = process.use(plugin)
+  options.plugins.forEach(plugin => {
+    processor.use(plugin)
   })
 
-  return process.toString(options)
+  return processor.toString(options)
 }
 
 /**
- * arrayify value
+ * Turn the given value into an array.
  *
  * @param  {*} `val`
  * @return {Array}
