@@ -15,7 +15,7 @@
 ## API
 
 ```js
-var rework = require('jstransformer')(require('jstransformer-rework'));
+var rework = require('jstransformer')(require('jstransformer-rework'))
 
 rework.render('blah').body
 //=> 'blah'
